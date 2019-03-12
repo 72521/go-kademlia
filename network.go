@@ -26,6 +26,7 @@ func sendRequest(remoteAddr string, message []byte) error {
 		fmt.Println("sendRequest write error:", err)
 		return err
 	}
+	return err
 }
 
 func startListen(port int) error {
